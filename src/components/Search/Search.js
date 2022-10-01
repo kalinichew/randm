@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./Search.module.scss";
 
 const Search = ({ setSearch, updatePageNumber }) => {
-  //let searchBtn = (e) => {
-  //  e.prevantDefault();
-  //};
+  let searchBtn = (e) => {
+    e.prevantDefault();
+  };
   return (
     <form
       className={`${styles.search} d-flex flex-sm-row flex-column align-items-center justify-content-center gap-4 mb-5`}
@@ -18,14 +18,12 @@ const Search = ({ setSearch, updatePageNumber }) => {
         className={styles.input}
         type="text"
       />
-      {/*
       <button
         onClick={searchBtn}
         className={`${styles.btn} btn btn-primary fs-5`}
       >
         Найти
       </button>
-      /*}
     </form>
   );
 };
